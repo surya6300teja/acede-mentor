@@ -1,11 +1,10 @@
 // Initialize flatpickr for the deadline input
+flatpickr("#deadline", {
+    dateFormat: "Y-m-d",
+     minDate: "today"
+ });
 
-// flatpickr("#deadline", {
-//     dateFormat: "Y-m-d",
-//     minDate: "today"
-// });
 
-alert("working")
 // File upload preview
 const fileUpload = document.getElementById('file-upload');
 const fileUploadLabel = document.querySelector('label[for="file-upload"]');
