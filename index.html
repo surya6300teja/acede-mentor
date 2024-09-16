@@ -253,20 +253,20 @@
                         <form id="project-form" class="max-w-2xl mx-auto mb-10 space-y-8 rounded-md">
                             <div class="space-y-2">
                                 <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-                                <input type="text" id="name" name="name" class="mt-1 block w-full h-10 pl-4 shadow-sm sm:text-sm rounded-md" placeholder="Your full name" required>
+                                <input type="text" id="name" name="name" class="mt-1 block w-full h-10 pl-4 shadow-sm sm:text-sm rounded-md border border-gray-400 focus:border-gray-600" placeholder="Your full name" required>
                             </div>
                             
                             <div class="space-y-2">
                                 <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
-                                <input type="email" id="email" name="email" class="mt-1 block w-full h-10 pl-4  shadow-sm sm:text-sm rounded-md" placeholder="your.email@example.com" required>
+                                <input type="email" id="email" name="email" class="mt-1 block w-full h-10 pl-4  shadow-sm sm:text-sm rounded-md border border-gray-400 focus:border-gray-600" placeholder="your.email@example.com" required>
                             </div>
                             <div class="space-y-2">
                                 <label for="project-title" class="block text-sm font-medium text-gray-700">Project Title</label>
-                                <input type="text" id="project-title" name="project-title" class="mt-1 h-10 pl-4  block w-full shadow-sm sm:text-sm rounded-md" placeholder="Enter your project title" required>
+                                <input type="text" id="project-title" name="project-title" class="mt-1 h-10 pl-4  block w-full shadow-sm sm:text-sm rounded-md border border-gray-400 focus:border-gray-600" placeholder="Enter your project title" required>
                             </div>
                             <div class="space-y-2">
                                 <label for="project-category" class="block text-sm font-medium text-gray-700">Project Category</label>
-                                <select id="project-category" name="project-category" class="mt-1 block  w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
+                                <select id="project-category" name="project-category" class="mt-1 block  w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md border border-gray-400 focus:border-gray-600">
                                     <option value="">Select a category</option>
                                     <option value="coding">Coding</option>
                                     <option value="research">Research</option>
@@ -277,15 +277,18 @@
                             </div>
                             <div class="space-y-2">
                                 <label for="project-description" class="block text-sm font-medium text-gray-700">Detailed Project Description</label>
-                                <textarea id="project-description" name="project-description" rows="4" class="mt-1 pt-2 pl-4  block w-full shadow-sm sm:text-sm rounded-md" placeholder="Provide a detailed description of your project, including any specific requirements or challenges you're facing." required></textarea>
+                                <textarea id="project-description" name="project-description" rows="4" 
+                                          class="mt-1 pt-2 pl-4 block w-full shadow-sm sm:text-sm rounded-md border border-gray-400 focus:border-gray-600 placeholder:text-gray-400 placeholder:text-sm sm:placeholder:text-xs"
+                                          placeholder="Provide a detailed description of your project, including any specific requirements or challenges you're facing." 
+                                          required></textarea>
                             </div>
                             <div class="space-y-2">
                                 <label for="deadline" class="block text-sm font-medium text-gray-700">Deadline</label>
-                                <input type="text" id="deadline" name="deadline" class="mt-1 block w-full h-10 pl-4 shadow-sm sm:text-sm rounded-md" placeholder="Select a date">
+                                <input type="text" id="deadline" name="deadline" class="mt-1 block w-full h-10 pl-4 shadow-sm sm:text-sm rounded-md border border-gray-400 focus:border-gray-600" placeholder="Select a date">
                             </div>
                             <div class="space-y-2">
                                 <label for="budget" class="block text-sm font-medium text-gray-700">Budget Estimate (Optional)</label>
-                                <input type="number" id="budget" name="budget" class="mt-1 block w-full h-10 pl-4  shadow-sm sm:text-sm rounded-md" placeholder="Enter your budget estimate">
+                                <input type="number" id="budget" name="budget" class="mt-1 block w-full h-10 pl-4  shadow-sm sm:text-sm rounded-md border border-gray-400 focus:border-gray-600" placeholder="Enter your budget estimate">
                             </div>
                             <div class="space-y-2">
                                 <label class="block text-sm font-medium text-gray-700">Upload Files</label>

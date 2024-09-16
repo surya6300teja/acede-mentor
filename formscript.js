@@ -4,7 +4,6 @@ flatpickr("#deadline", {
      minDate: "today"
  });
 
-
 // File upload preview
 const fileUpload = document.getElementById('file-upload');
 const fileUploadLabel = document.querySelector('label[for="file-upload"]');
@@ -25,7 +24,7 @@ const form = document.getElementById('project-form');
 form.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    // Validate form fields before proceeding
+    
     if (!validateForm()) {
         alert('Please fill in all required fields.');
         return;
